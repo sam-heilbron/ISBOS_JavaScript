@@ -20,15 +20,28 @@ r = "sam"; //This is invalid because a variable named r hasn't been created yet
 #### More Information
 
 [w3 Schools JavaScript Data Types] (http://www.w3schools.com/js/js_datatypes.asp)
-[w3 Schools Javascript Variable] (http://www.w3schools.com/js/js_variables.asp)
+[w3 Schools JavaScript Variable] (http://www.w3schools.com/js/js_variables.asp)
 [w3 Schools JavaScript Variable Scope] (http://www.w3schools.com/js/js_variables.asp)
 
 
 # Function
-
+A function is a block of code that is designed to complete a task. A function must be defined somewhere in your code. This means that you tell the computer what a function does. When you "call" a function, it jumps to the section of code where a function is defined, executes it, and then returns back to the original place in the code that was being exectuted. A function accepts arguments when it is called. These arguments are variables that the function then does something with.
 
 #### Code Examples
 
+```javascript
+//This function accepts two numbers as its arguments, adds them together and then returns the sum
+function add_two_numbers(num1, num2) {
+	var sum = num1 + num2;
+	return sum;
+}
+
+var t = add_two_numbers(5,6); //This is how you would "call" the add_two_numbers function. This will add 5 and 6, and store the result in a variable
+var a = 4;
+var b = 6;
+var c = add_two_numbers(a,b); //This will add the values of the variables a and b, and store the result in c. Since a holds 4 and b holds 6, c will hold 10
+
+```
 
 #### More Information
 
