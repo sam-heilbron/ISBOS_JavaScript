@@ -58,8 +58,8 @@ var a = 4; // Stores 4 in variable a
 var b = 6; // Stores 6 in variable b
 var c = sum(a,b); //This will add the values of the variables a and b, and store the result in c. Since a holds 4 and b holds 6, c will hold 10
 
-t = max(a, b); This while store the max of whats in variable a and variable b, in variable t. You'll notice we used t earlier, and now are overwrtiing the value
-a = sum(max(4,5), avg(4,5,6)); This is an example of how you can "nest" functions. That is, you can put a function call in place of another functions argument.
+t = max(a, b); // This while store the max of whats in variable a and variable b, in variable t. You'll notice we used t earlier, and now are overwrtiing the value
+a = sum(max(4,5), avg(4,5,6)); // This is an example of how you can "nest" functions. That is, you can put a function call in place of another functions argument.
 // To evaluate nested functions, you must work from the inside out. 
 // Lets start with max(4,5). This will return the value 5.
 // Next, look at avg(4,5,6). This will return 5.
