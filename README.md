@@ -31,16 +31,40 @@ A function is a block of code that is designed to complete a task. A function mu
 
 ```javascript
 //This function accepts two numbers as its arguments, adds them together and then returns the sum
-function add_two_numbers(num1, num2) {
-	var sum = num1 + num2;
-	return sum;
+function sum(num1, num2) {
+	var s = num1 + num2;
+	return s; // s holds the sum of num1 and num2
 }
 
-var t = add_two_numbers(5,6); //This is how you would "call" the add_two_numbers function. This will add 5 and 6, and store the result in a variable
-var a = 4;
-var b = 6;
-var c = add_two_numbers(a,b); //This will add the values of the variables a and b, and store the result in c. Since a holds 4 and b holds 6, c will hold 10
+//This function accepts two numbers as its arguments and returns the larger of the two.
+function max(x, y) {
+	if(x > y) {
+		return x;
+	}
+	else {
+		return y;
+	}
+}
 
+//This function accepts three numbers as its arguments and returns the average of the three.
+function avg(a, b, c) {
+	var sum = a + b + c;
+	var avg = sum / 3;
+	return avg;
+}
+
+var t = sum(5,6); //This is how you would "call" the sum function. This will add 5 and 6, and store the result in variable t
+var a = 4; // Stores 4 in variable a
+var b = 6; // Stores 6 in variable b
+var c = sum(a,b); //This will add the values of the variables a and b, and store the result in c. Since a holds 4 and b holds 6, c will hold 10
+
+t = max(a, b); This while store the max of whats in variable a and variable b, in variable t. You'll notice we used t earlier, and now are overwrtiing the value
+a = sum(max(4,5), avg(4,5,6)); This is an example of how you can "nest" functions. That is, you can put a function call in place of another functions argument.
+// To evaluate nested functions, you must work from the inside out. 
+// Lets start with max(4,5). This will return the value 5.
+// Next, look at avg(4,5,6). This will return 5.
+// Finally, replace the function calls with the appropriate return values so now you have a = sum(5,5)
+// This is easy! You know this function returns 10
 ```
 
 #### More Information
