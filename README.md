@@ -24,7 +24,7 @@ r = "sam"; //This is invalid because a variable named r hasn't been created yet
 [w3 Schools JavaScript Variable Scope] (http://www.w3schools.com/js/js_variables.asp)
 
 
-# Function
+# Functions
 A function is a block of code that is designed to complete a task. A function must be defined somewhere in your code. This means that you tell the computer what a function does. When you "call" a function, it jumps to the section of code where a function is defined, executes it, and then returns back to the original place in the code that was being exectuted. A function accepts arguments when it is called. These arguments are variables that the function then does something with.
 
 #### Code Examples
@@ -81,5 +81,36 @@ a = max(max(max(1, a), 3), c); // This will return 7. Again, start from the insi
 
 #### More Information
 
+[w3 Schools JavaScript functions] (http://www.w3schools.com/js/js_functions.asp)
 
 
+# Conditionals
+
+A conditional statement compares values and has defined operations depending on the comparison. Valid comparisons are "==" (equal), "!=" (not equal), ">" (greater than), "<" (less than), ">=" (greater than or equal to), "<=" (less than or equal to). You can combine conditions using "&&" (and), "||" (or), and "!" (not). The condition goes between () and the code to be evaluated as a result goes between {}. See examples below:
+
+#### Code Examples
+
+```javascript
+var a = 10;
+if(a > 10) {
+	a = a + 5; // set a to 5 more than its original value
+}
+
+var b = "Sam";
+if(b == "Jim") { //If the value inside variable b is the string "Jim", do something
+	return 1;
+} else if(b == "John") { // If the value was not Jim, check if its "John". If so, do something
+	return 2;
+} else { // If the value wasn't caught by either of the above if statements, do something
+	return 3;
+}
+
+var name = "Kim";
+var age = 28;
+if(name == "Kim" || age == 14) { // If the name variable holds "Kim" OR if the age variable holds 14, do something
+	return "Success";
+} else { // If the above condition (in the if statement) wasn't true, do something
+	return "Failure";
+}
+
+```
