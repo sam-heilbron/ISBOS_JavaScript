@@ -114,3 +114,31 @@ if(name == "Kim" || age == 14) { // If the name variable holds "Kim" OR if the a
 }
 
 ```
+
+#### More Information
+
+[w3 Schools JavaScript Conditionals] (http://www.w3schools.com/js/js_comparisons.asp)
+
+# Loops
+Loops are methods of repeating a chunk of code. This may repeat for a certain number of times, or until a condition is no longer true. The two major types of loops are while loops and for loops. 
+
+## While Loop
+The purpose of a while loop is to repeat a chunk of code WHILE a condition is true. Once the condtion is no longer true, the loop breaks and the program continues executing whatever code is below the loop.
+
+#### Code Examples
+
+```javascript
+var a = 10;
+while (a > 0) {
+	console.log(a); //print the value of a
+}	a = a - 1; // Set a to one less than its previous value
+console.log("Done");
+//The above while loop first checks the condition (a > 0). Since a is 10, and 10 > 0, this condition is true and the computer looks at the code inside the {} brackets. 
+//It prints out the value of a (10) to the screen and then sets a to 9 (a = 10 - 1). 
+//Next, it checks the conditional again, but this time with the updated value of a, which is now 9. Since 9 > 0, it completes the code inside the {} brackets again. 
+//This loop repeats again and again until a reaches a value where the condition, a > 0 is not true. 
+//Once this happens, the code after the {} brackets will execute and "Done" will be printed to the screen.
+```
+
+
+
